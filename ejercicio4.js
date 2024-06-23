@@ -60,6 +60,8 @@ const streamersLegendsFilter = streamers2.filter((streamer) => {
     if (streamer.age > 35) {
       streamer.gameMorePlayed = streamer.gameMorePlayed.toUpperCase();
     }
+    //?El filter espera siempre que se devuelva un valor booleano, así que al cumplirse la primera condición,
+    //?devolvemos un true en el callback para que pueda aplicar el filtro al siguiente valor (si este se cumple).
     return true;
   }
 });
