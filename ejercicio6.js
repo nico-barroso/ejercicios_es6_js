@@ -31,7 +31,7 @@ console.log(scorePass);
 
 // 6.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
 
-const averageScore = exams.reduce((acc, exam, index, array) => {
+const averageScore = exams.reduce((acc, exam) => {
   return acc + exam.score;
 }, 0);
 
