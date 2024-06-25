@@ -3,13 +3,14 @@
 const ages = [22, 14, 24, 55, 65, 21, 12, 13, 90];
 
 const filteredAge = ages.filter((adult) => adult > 18);
-console.log(filteredAge);
+console.log("4.1. ", filteredAge);
 
 // 4.2 Dado el siguiente array, utiliza .filter() para generar un nuevo array
 // con los valores que sean par.
 const ages2 = [22, 14, 24, 55, 65, 21, 12, 13, 90];
+
 const evenAges = ages2.filter((adult) => adult % 2 == 0);
-console.log(evenAges);
+console.log("4.2. ", evenAges);
 
 // 4.3 Dado el siguiente array, utiliza .filter() para generar un nuevo array
 // con los streamers que tengan el gameMorePlayed = 'League of Legends'.
@@ -19,6 +20,7 @@ const streamers = [
   { name: "Reven", age: 43, gameMorePlayed: "League of Legends" },
   { name: "AuronPlay", age: 33, gameMorePlayed: "Among Us" },
 ];
+
 const filteredStreamers = streamers.filter((streamer) => {
   if (streamer.gameMorePlayed === "League of Legends") {
     return {
@@ -28,7 +30,7 @@ const filteredStreamers = streamers.filter((streamer) => {
     };
   }
 });
-console.log(filteredStreamers);
+console.log("4.3. ", filteredStreamers);
 
 // 4.4 Dado el siguiente array, utiliza .filter() para generar un nuevo array
 // con los streamers que incluyan el caracter 'u' en su propiedad .name. Recomendamos
@@ -39,6 +41,7 @@ const streamers2 = [
   { name: "Reven", age: 43, gameMorePlayed: "League of Legends" },
   { name: "AuronPlay", age: 33, gameMorePlayed: "Among Us" },
 ];
+
 const streamers2Filtered = streamers2.filter((streamer) => {
   if (streamer.name.includes("u")) {
     return {
@@ -48,7 +51,7 @@ const streamers2Filtered = streamers2.filter((streamer) => {
     };
   }
 });
-console.log(streamers2Filtered);
+console.log("4.4. ", streamers2Filtered);
 
 // 4.5 utiliza .filter() para generar un nuevo array con los streamers que incluyan
 // el caracter 'Legends' en su propiedad .gameMorePlayed. Recomendamos usar la funcion
@@ -66,4 +69,4 @@ const streamersLegendsFilter = streamers2.filter((streamer) => {
   }
 });
 
-console.log(streamersLegendsFilter);
+console.log("4.5. ", streamersLegendsFilter);

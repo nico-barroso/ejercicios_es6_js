@@ -24,4 +24,4 @@ function filterVideogames(videogames) {
   console.log(averageScore / gameFilter.length);
 }
 
-filterVideogames(videogames);
+filterVideogames("7.1. ", videogames);

@@ -17,7 +17,7 @@ const totalScore = exams.reduce(
   (accumulator, exam) => accumulator + exam.score,
   0
 );
-console.log(totalScore);
+console.log("6.1. ", totalScore);
 
 // 6.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los
 // alumnos que esten aprobados usando la función .reduce().
@@ -27,7 +27,7 @@ const scorePass = exams.reduce((acc, exam) => {
   }
   return acc;
 }, 0);
-console.log(scorePass);
+console.log("6.2. ", scorePass);
 
 // 6.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
 
@@ -35,4 +35,4 @@ const averageScore = exams.reduce((acc, exam) => {
   return acc + exam.score;
 }, 0);
 
-console.log(averageScore / exams.length);
+console.log("6.3. ", averageScore / exams.length);
